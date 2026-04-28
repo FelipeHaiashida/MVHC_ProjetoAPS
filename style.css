@@ -348,6 +348,11 @@ strong { color: var(--text); font-weight: 500; }
   color: #fff !important;
   padding: 8px 16px !important;
   border-radius: 8px;
+  font-family: var(--font-display);
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .07em;
+  text-transform: uppercase;
 }
 
 .nav-cta:hover { opacity: .88; background: unset !important; }
