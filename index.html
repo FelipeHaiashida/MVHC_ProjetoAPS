@@ -23,21 +23,20 @@
       <p class="login-sub">Museu Virtual da História da Computação</p>
 
       <div class="form-group">
-        <label for="login-user">Usuário ou E-mail</label>
-        <input type="text" id="login-user" placeholder="Digite seu usuário" autocomplete="off" />
+        <label for="login-user">E-mail</label>
+        <input type="email" id="login-user" placeholder="Digite seu e-mail" autocomplete="email" />
         <span class="field-error" id="err-user"></span>
       </div>
 
       <div class="form-group">
         <label for="login-pass">Senha</label>
-        <input type="password" id="login-pass" placeholder="Digite sua senha" />
+        <input type="password" id="login-pass" placeholder="Digite sua senha" autocomplete="current-password" />
         <span class="field-error" id="err-pass"></span>
       </div>
 
-      <!-- Dica demonstrativa visível para o usuário -->
-      <p class="login-hint">Demo: usuário <strong>museu</strong> · senha <strong>1234</strong></p>
+      <p class="login-hint">Entre com seu e-mail e senha ou crie uma nova conta.</p>
 
-      <button class="btn-primary btn-full" id="btn-login" onclick="handleLogin()">
+      <button type="button" class="btn-primary btn-full" id="btn-login">
         <span>Entrar</span>
         <span class="btn-arrow">→</span>
       </button>
@@ -71,6 +70,9 @@
             <a href="https://seu-link-da-unity-webgl.com"
                target="_blank" rel="noopener"
                class="nav-cta">Acessar Museu</a>
+          </li>
+          <li>
+            <button type="button" onclick="logout(); closeMenu();" class="nav-cta" style="border:none; cursor:pointer;">Sair</button>
           </li>
         </ul>
       </div>
@@ -581,6 +583,6 @@
 
   </div><!-- /main-site -->
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
