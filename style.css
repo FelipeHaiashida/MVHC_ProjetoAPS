@@ -357,7 +357,11 @@ strong { color: var(--text); font-weight: 500; }
   cursor: pointer;
 }
 
-.nav-cta:hover { opacity: .88; background: unset !important; }
+.nav-cta:hover {
+  opacity: 1;
+  color: var(--cyan) !important;
+  background: rgba(12,255,225,.1) !important;
+}
 
 .nav-toggle {
   display: none;
